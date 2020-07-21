@@ -1,1 +1,169 @@
+.cactus {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    animation: bg-change 4s infinite;
+    border-radius: 20%;
+}
 
+#eyes {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0,0,0);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+#eyes::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0,0,0);
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: -1px;
+}
+
+audio {
+    display: none;
+}
+
+#mouth {
+    width: 30px;
+    height: 5px;
+    background-color: rgb(0,0,0);
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    animation: mouth 4s infinite ease;
+}
+
+
+#cactus-pot {
+    width: 70px;
+    height: 70px;
+    background-color: lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    border: 1px solid black;
+    border-radius: 0 0 20% 20%;
+}
+
+
+#cactus-pot-top {
+    width: 90px;
+    height: 10px;
+    background-color: lightgray;
+    border: 1px solid black;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+
+
+#cactus-plant {
+    width: 70px;
+    height: 110px;
+    background-color: rgb(144, 238, 144);
+    border: 1px solid black;
+    border-radius: 50% 51% 0% 38% / 60% 58% 0% 0%;
+    position: absolute;
+    top: 10px;
+    left: 60px; 
+}
+
+#styling {
+    width: 5px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: linear-gradient(#DBE9F4,#F0F8FF,#FFFFFF,#F2F3F4);
+}
+
+.thorns {
+    width: 0;
+    height: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50px;
+    left: 56px;
+    transform: rotate(-50deg);
+}
+
+.thorn1 {
+    width: 0;
+    height: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 30px;
+    left: 61px;
+    transform: rotate(90deg);
+}
+
+
+.thorn2 {
+    width: 0;
+    height: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 70px;
+    left: 54px;
+    transform: rotate(-70deg);
+}
+
+.thorn3 {
+    width: 0;
+    height: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 90px;
+    left: 54px;
+    transform: rotate(98deg);
+}
+
+.thorn4 {
+    width: 0;
+    height: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 110px;
+    left: 54px;
+    transform: rotate(90deg);
+}
+
+
+@-webkit-keyframes bg-change {
+   from {
+       background-color: #FFFFFF;
+       transform: rotate(-40deg);
+   }
+   to {
+       background-color:  #FFDFD3;
+       transform: rotate(40deg);
+   }
+}
+
+@-webkit-keyframes mouth {
+    from {
+        width: 30px;
+        height: 5px;
+    }
+
+    to {
+        height: 40px;
+    }
+}
